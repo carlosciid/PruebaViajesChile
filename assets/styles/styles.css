@@ -81,3 +81,23 @@ body, html {
 #destacados .card-body {
     background-color: #00bfaf; /* Fondo oscuro para el cuerpo de las tarjetas */
 }
+#contacto {
+    background-color: #000; /* O el color que prefieras */
+    padding: 50px 0;
+}
+
+#contacto .form-control {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+#contacto .form-control::placeholder {
+    color: black;
+}
+
+#contacto .btn-primary {
+    background-color: #00bfaf; /* O el color que prefieras */
+    border: none;
+}
+
