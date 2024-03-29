@@ -64,3 +64,20 @@ body, html {
 }
 
 
+#destacados {
+    padding: 50px 0;
+}
+
+#destacados .card {
+    background-color: #00bfaf; /* Las tarjetas son transparentes con bordes claros */
+    border: 1px solid #00bfaf;
+}
+
+#destacados .card-img-top {
+    height: 200px; /* Altura fija para las imágenes de las tarjetas */
+    object-fit: cover;
+}
+
+#destacados .card-body {
+    background-color: #00bfaf; /* Fondo oscuro para el cuerpo de las tarjetas */
+}

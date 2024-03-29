@@ -6,4 +6,3 @@ document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
         target.scrollIntoView({ behavior: 'smooth' });
     });
 });
-
