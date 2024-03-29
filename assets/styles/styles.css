@@ -1,13 +1,13 @@
+/* Estilos globales */
 body, html {
     margin: 0;
     padding: 0;
     background-color: #000; 
 }
 
-
+/* Estilos de la barra de navegación */
 .navbar {
     background-color: transparent !important;
-    
 }
 
 .navbar-light .navbar-nav {
@@ -24,8 +24,6 @@ body, html {
     transition: color 0.2s;
 }
 
-
-
 .navbar-toggler {
     border-color: rgba(255,255,255,0.5);
 }
@@ -35,16 +33,17 @@ body, html {
     width: auto; 
 }
 
-#quienes-somos {
+/* Estilos de las secciones */
+#quienes-somos,
+#contacto {
     background-color: #000; 
-
 }
 
-#quienes-somos h2 {
+#quienes-somos h2,
+#destacados h2,
+#contacto h2 {
     margin-bottom: 1rem;
 }
-
-
 
 .icon-container {
     width: 100%; 
@@ -58,12 +57,13 @@ body, html {
     font-size: 24px; 
 }
 
-#quienes-somos p {
+#quienes-somos p,
+#destacados .card-body p {
     color: #fff; 
     text-align: center;
 }
 
-
+/* Estilos de la sección destacados */
 #destacados {
     padding: 50px 0;
 }
@@ -81,8 +81,9 @@ body, html {
 #destacados .card-body {
     background-color: #00bfaf; 
 }
+
+/* Estilos del formulario de contacto */
 #contacto {
-    background-color: #000; 
     padding: 50px 0;
 }
 
@@ -101,6 +102,7 @@ body, html {
     border: none;
 }
 
+/* Estilos del pie de página */
 footer {
     background-color: #00bfaf; 
 }
@@ -113,44 +115,44 @@ footer a:hover {
     color: #00bfaf; 
 }
 
+/* Estilos responsivos */
 @media (max-width: 768px) {
+    footer .row,
+    #quienes-somos .row,
+    #destacados .row,
+    #contacto form,
     footer .row {
         flex-direction: column; 
     }
 
-    footer .col {
+    footer .col,
+    .container, 
+    .container-fluid {
         margin-bottom: 10px; 
+        padding-left: 15px; 
+        padding-right: 15px; 
     }
 
-.container, .container-fluid {
-    padding-left: 15px; 
-    padding-right: 15px; 
-  }
-  
-  #quienes-somos .row, #destacados .row, #contacto form, footer .row {
-    
-    padding-right: 15px; 
-  }
-
-  #quienes-somos .row > [class^="col-"],
-  #destacados .row > [class^="col-"],
-  #contacto .row > [class^="col-"],
-  footer .row > [class^="col-"] {
-    padding-left: 15px; 
-    padding-right: 15px; 
-  }
-}
-@media (max-width: 768px) {
     #quienes-somos {
         display: none;
     }
+
+    #quienes-somos .row > [class^="col-"],
+    #destacados .row > [class^="col-"],
+    #contacto .row > [class^="col-"],
+    footer .row > [class^="col-"] {
+        padding-left: 15px; 
+        padding-right: 15px; 
+    }
 }
 
+/* Estilo para cambiar el fondo de la barra al hacer scroll */
 .nav-scrolled {
     background-color: #000 !important; 
     transition: background-color 0.3s; 
 }
 
+/* Estilo para ocultar el mensaje de confirmación inicialmente */
 #confirmationMessage {
     display: none; 
 }
