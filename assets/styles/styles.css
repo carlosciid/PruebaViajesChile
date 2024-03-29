@@ -1,3 +1,9 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro para todo el cuerpo de la página */
+}
+
 
 .navbar {
     background-color: transparent !important;
@@ -27,6 +33,34 @@
 .navbar-brand img {
     max-height: 40px; 
     width: auto; 
+}
+
+#quienes-somos {
+    background-color: #000; /* Fondo general de la sección */
+
+}
+
+#quienes-somos h2 {
+    margin-bottom: 1rem;
+}
+
+
+
+.icon-container {
+    width: 100%; /* El contenedor del icono ocupa todo el ancho */
+    padding: 1rem 0; /* Espacio por arriba y por abajo */
+    background-color: #00bfaf; /* Color de fondo del contenedor del icono */
+    margin-bottom: 1rem; /* Espaciado debajo del contenedor del icono */
+}
+
+.fas {
+    color: #fff; /* Color de los íconos */
+    font-size: 24px; /* Tamaño de los íconos */
+}
+
+#quienes-somos p {
+    color: #fff; /* Color de texto para las descripciones */
+    text-align: center;
 }
 
 
