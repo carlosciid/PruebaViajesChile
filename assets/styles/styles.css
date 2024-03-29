@@ -113,3 +113,44 @@ footer a:hover {
     color: #00bfaf; 
 }
 
+@media (max-width: 768px) {
+    footer .row {
+        flex-direction: column; 
+    }
+
+    footer .col {
+        margin-bottom: 10px; 
+    }
+
+.container, .container-fluid {
+    padding-left: 15px; 
+    padding-right: 15px; 
+  }
+  
+  #quienes-somos .row, #destacados .row, #contacto form, footer .row {
+    
+    padding-right: 15px; 
+  }
+
+  #quienes-somos .row > [class^="col-"],
+  #destacados .row > [class^="col-"],
+  #contacto .row > [class^="col-"],
+  footer .row > [class^="col-"] {
+    padding-left: 15px; 
+    padding-right: 15px; 
+  }
+}
+@media (max-width: 768px) {
+    #quienes-somos {
+        display: none;
+    }
+}
+
+.nav-scrolled {
+    background-color: #000 !important; 
+    transition: background-color 0.3s; 
+}
+
+#confirmationMessage {
+    display: none; 
+}
